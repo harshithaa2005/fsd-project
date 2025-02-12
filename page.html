@@ -13,71 +13,87 @@
 
         body {
             font-family: Arial, sans-serif;
-           
+            background: linear-gradient(to right, #1e1e1e, #444); /* Gradient background */
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            position: relative;
-            overflow: hidden;
+            text-align: center;
+            padding: 20px;
         }
 
         .container {
-            text-align: left;
-            max-width: 800px;
+            max-width: 700px;
             position: relative;
             z-index: 1;
         }
 
-               h1 {
+        h1 {
             font-size: 2.5em;
-            font-weight: normal;
+            font-weight: 300;
         }
 
         .bold {
             font-weight: bold;
-            font-size: 3em;
+            font-size: 3.5em;
+            color: #f4b400; /* Accent color */
         }
 
         .subtext {
-            font-size: 0.9em;
-            margin-top: 10px;
+            font-size: 1.1em;
+            margin: 15px 0;
+            color: #ddd;
         }
 
+        .description {
+            font-size: 1em;
+            color: #bbb;
+            margin-top: 15px;
+        }
+
+        /* Enhancing Video Link */
         .play-button {
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            margin-top: 20px;
-            cursor: pointer;
-            color: #fff;
+            justify-content: center;
+            background-color: #ff5722; /* Orange button */
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.3em;
+            font-weight: bold;
             text-decoration: none;
-            font-size: 1.5em;
+            border-radius: 30px;
+            margin-top: 25px;
+            transition: background 0.3s ease, transform 0.2s;
+            box-shadow: 0px 4px 10px rgba(255, 87, 34, 0.5);
+        }
+
+        .play-button:hover {
+            background-color: #e64a19; /* Darker orange */
+            transform: scale(1.05);
         }
 
         .play-button::before {
             content: '▶';
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin-right: 10px;
         }
     </style>
 </head>
 
-<body bgcolor="grey">
- 
+<body>
     <div class="container">
-        <!-- Background color instead of image -->
-        <div class="background-color"></div>
         <h1>Don't just do.</h1>
         <div class="bold">Achieve.</div>
         <div class="subtext">A DESIGN, DEVELOPMENT AND MARKETING AGENCY</div>
         
-        <!-- Link to video with play button -->
+        <!-- Enhanced Play Button for Video -->
         <a href="https://youtu.be/LsCu209_KPI?si=ESKo7Nf2HXPAuuNb" class="play-button" target="_blank">
-            <div>What do you want to achieve?</div>
+            Watch Video
         </a>
-        <div>Create innovative applications, generate revenue, inspire, mobile, and monitoring.</div>
-    </div>
 
+        <div class="description">Create innovative applications, generate revenue, inspire, mobile, and monitoring.</div>
+    </div>
 </body>
 </html>
