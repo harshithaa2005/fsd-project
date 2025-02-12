@@ -6,7 +6,7 @@
     <title>Survey</title>
     <style>
         body {
-            background-color: #dc7633 ; /* Light grey background color */
+            background-color: #dc7633; /* Light grey background color */
             font-family: Arial, sans-serif;
         }
 
@@ -61,11 +61,26 @@
         }
 
         button:hover {
-            background-color:#eb984e ; /* Darker green when hovered */
+            background-color: #eb984e; /* Darker green when hovered */
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #38a169;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
+
+    <button class="back-btn" onclick="window.history.back();">Back</button>
 
     <center>
         <h1>Survey Form</h1>
