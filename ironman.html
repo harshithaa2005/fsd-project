@@ -22,6 +22,18 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 400px;
+            position: relative;
+        }
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #38a169;
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
         }
         .container h1 {
             font-size: 1.5rem;
@@ -102,6 +114,7 @@
 </head>
 <body>
     <div class="container">
+        <button class="back-btn" onclick="window.history.back();">Back</button>
         <h1>Movie Search App</h1>
         <p>Discover and explore your favorite movies like never before with our Intuitive Movie Search App, your ultimate cinematic companion.</p>
         <div class="search-bar">
@@ -135,7 +148,3 @@
     </div>
 </body>
 </html>
-
-
-
-
