@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <style>
+        body {
+            background-color: #38a169;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #1a202c;
+            color: white;
+            padding: 50px;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .container h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .container p {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .search-bar {
+            display: flex;
+            margin-bottom: 1.5rem;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            padding: 0.5rem;
+            border-radius: 0.25rem 0 0 0.25rem;
+            border: none;
+        }
+        .search-bar button {
+            background-color: #38a169;
+            padding: 0.5rem;
+            border-radius: 0 0.25rem 0.25rem 0;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .movie-info {
+            text-align: center;
+        }
+        .movie-info img {
+            display: block;
+            margin: 0 auto 1rem;
+            width: 200px;
+            height: 300px;
+        }
+        .movie-info h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .movie-info .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+        .movie-info .rating i {
+            color: #f6e05e;
+            margin-right: 0.25rem;
+        }
+        .movie-info .details {
+            color: #a0aec0;
+            margin-bottom: 1rem;
+        }
+        .movie-info .tags {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .movie-info .tags span {
+            background-color: #2d3748;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+        .movie-info .plot, .movie-info .cast {
+            text-align: left;
+        }
+        .movie-info .plot p, .movie-info .cast p {
+            margin-bottom: 1rem;
+        }
+        .movie-info .plot p:first-child, .movie-info .cast p:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search App</h1>
+        <p>Discover and explore your favorite movies like never before with our Intuitive Movie Search App, your ultimate cinematic companion.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a movie...">
+            <button>Search</button>
+        </div>
+        <div class="movie-info">
+            <img src="https://storage.googleapis.com/a1aa/image/zXb9JzwCLGPuTn_So0poCL77S97CiS2pdUxefba-1v8.jpg" alt="Movie poster of Iron Man">
+            <h2>Iron Man</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>7.9</span>
+            </div>
+            <div class="details">
+                <span>PG-13</span> <span>2008</span> <span>126 min</span>
+            </div>
+            <div class="tags">
+                <span>Action</span>
+                <span>Adventure</span>
+                <span>Sci-Fi</span>
+            </div>
+            <div class="plot">
+                <p>Plot:</p>
+                <p>After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.</p>
+            </div>
+            <div class="cast">
+                <p>Cast:</p>
+                <p>Robert Downey Jr., Gwyneth Paltrow, Terrence Howard</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achieve</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+           
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: left;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+               h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 3em;
+        }
+
+        .subtext {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .play-button {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .play-button::before {
+            content: '▶';
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body bgcolor="grey">
+ 
+    <div class="container">
+        <!-- Background color instead of image -->
+        <div class="background-color"></div>
+        <h1>Don't just do.</h1>
+        <div class="bold">Achieve.</div>
+        <div class="subtext">A DESIGN, DEVELOPMENT AND MARKETING AGENCY</div>
+        
+        <!-- Link to video with play button -->
+        <a href="https://youtu.be/LsCu209_KPI?si=ESKo7Nf2HXPAuuNb" class="play-button" target="_blank">
+            <div>What do you want to achieve?</div>
+        </a>
+        <div>Create innovative applications, generate revenue, inspire, mobile, and monitoring.</div>
+    </div>
+
+</body>
+</html>

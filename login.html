@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Centering the content */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* Light background color */
+    }
+
+    /* Styling the form */
+    .form-container {
+      text-align: center;
+      background-color: lightblue ;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling the login button */
+    .login-button {
+      background-color: #4CAF50; /* Green color */
+      color: white; /* Fixed text color */
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .login-button:hover {
+      background-color: #45a049; /* Slightly darker green on hover */
+    }
+
+    .input-field {
+      width: 280px;
+      padding: 8px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    /* Styling the register link */
+    .register-link {
+      font-size: 14px;
+      color: #090d10;
+      text-decoration: none;
+    }
+
+    .register-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Login</h1>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" class="input-field" placeholder="Enter your email"><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" class="input-field" placeholder="Enter your password"><br>
+
+    <button class="login-button">Login</button><br><br>
+
+    <a href="email.html" class="register-link">Don't have an account? Register here</a>
+  </div>
+
+</body>
+</html>
