@@ -14,12 +14,34 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f0f0f0; /* Light background color */
+      flex-direction: column; /* Align elements vertically */
+      position: relative; /* Allows absolute positioning of the Home button */
+    }
+
+    /* Styling the Home button */
+    .home-button {
+      position: absolute; /* Absolute positioning */
+      right: 20px; /* Position the button 20px from the right */
+      top: 20px; /* Position the button 20px from the top */
+      background-color: #2196F3; /* Blue color */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .home-button:hover {
+      background-color: #1976D2; /* Slightly darker blue on hover */
     }
 
     /* Styling the form */
     .form-container {
       text-align: center;
-      background-color: lightblue ;
+      background-color: lightblue;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -60,9 +82,29 @@
     .register-link:hover {
       text-decoration: underline;
     }
+
+    /* Styling the back button */
+    .back-button {
+      background-color: #f44336; /* Red color */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .back-button:hover {
+      background-color: #d32f2f; /* Slightly darker red on hover */
+    }
   </style>
 </head>
 <body>
+
+  <!-- Home Button at the top right -->
+  <a href="main.html" class="home-button">Home</a>
 
   <div class="form-container">
     <h1>Login</h1>
@@ -75,7 +117,7 @@
 
     <button class="login-button">Login</button><br><br>
 
-    <a href="email.html" class="register-link">Don't have an account? Register here</a>
+    <a href="email.html" class="register-link">Don't have an account? Register here</a><br><br>
   </div>
 
 </body>
