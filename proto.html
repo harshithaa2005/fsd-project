@@ -14,6 +14,25 @@
             margin: 0;
             padding: 0;
         }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #00FFFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Courier, monospace;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background-color: white;
+            color: #00FFFF;
+        }
         .header {
             text-align: center;
             padding: 50px 0; /* Vertical padding */
@@ -65,6 +84,10 @@
     </style>
 </head>
 <body>
+
+    <!-- Back Button at the top right -->
+    <a href="javascript:history.back()" class="back-button">Back</a>
+
     <div class="header">
         <h1>Steve Jobs</h1>
         <p>1955-2011</p>
@@ -85,5 +108,6 @@
             Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American entrepreneur, industrial designer, business magnate, media proprietor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT. He is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.
         </p>
     </div>
+
 </body>
 </html>
